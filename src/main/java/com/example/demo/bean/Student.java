@@ -3,28 +3,28 @@ package com.example.demo.bean;
 /**
  * Created by wangyang on 2019/1/14.
  */
-public class Student {
-    private int age;
-    private String name;
+public class Student<T> {
+    private T age;
+    private T name;
 
-    public Student(int age, String name) {
+    public Student(T age, T name) {
         this.age = age;
         this.name = name;
     }
 
-    public int getAge() {
+    public T getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(T age) {
         this.age = age;
     }
 
-    public String getName() {
+    public T getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(T name) {
         this.name = name;
     }
 }
