@@ -16,7 +16,7 @@ public class MapController{
         map.put("age", 22);
         map.remove("name");
         Set set = map.entrySet();
-//        Set set1 = map.keySet();
+        Set set1 = map.keySet();
 //        for(Map.Entry<String> entry:set){
 //
 //        }

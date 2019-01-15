@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.core.Cut;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,5 +34,18 @@ public class ListController {
         }
         System.out.println(count);
         System.out.println(bb);
+    }
+
+
+    public void heat() {
+        Cut cut = new Cut() {
+            @Override
+            public void get() {
+
+            }
+        };
+//        public void get () {
+//
+//        }
     }
 }
