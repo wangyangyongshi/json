@@ -5,8 +5,14 @@ package com.example.demo.core;
  */
 public abstract class Cut {
 
-    public Cut() {
-    }
+//    public Cut() {
+//    }
 
     public abstract void get();
+
+    public static void tree() {
+
+    }
+
+    ;
 }
