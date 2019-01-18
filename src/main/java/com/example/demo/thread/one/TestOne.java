@@ -9,6 +9,10 @@ public class TestOne {
         NumberThread numberThread = new NumberThread();
         Thread thread = new Thread(numberThread);
         thread.start();
+
+        LetterThread letterThread = new LetterThread();
+        Thread threadLetter = new Thread(letterThread);
+        threadLetter.start();
     }
 
 }
