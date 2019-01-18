@@ -10,5 +10,9 @@ public class ThreadController {
     public static void main(String[] args) {
         //创建两个线程，其中一个输出1-52，另外一个输出A-Z。输出格式要求：12A 34B 56C 78D
         //https://blog.csdn.net/u014297722/article/details/70174038
+
+
+
+
     }
 }
