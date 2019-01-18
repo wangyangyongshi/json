@@ -2,13 +2,13 @@ package com.example.demo.controller;
 
 /**
  * Created by wangyang on 2019/1/18.
- * <p>
- * 可变数组
  */
-public class ArrayController {
+public class JvmController {
 
+    /**
+     *年轻，年老，永久
+     */
     public static void main(String[] args) {
 
     }
-
 }
