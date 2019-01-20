@@ -9,12 +9,18 @@ public class TestOne {
     public static void main(String[] args) {
         ShareOne shareOne = new ShareOne();
         NumberThread numberThread = new NumberThread(shareOne);
-        Thread thread = new Thread(numberThread);
-        thread.start();
+        Thread threadNumber = new Thread(numberThread);
 
         LetterThread letterThread = new LetterThread(shareOne);
         Thread threadLetter = new Thread(letterThread);
+        threadNumber.start();
         threadLetter.start();
+
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

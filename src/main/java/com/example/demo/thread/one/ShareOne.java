@@ -6,27 +6,26 @@ package com.example.demo.thread.one;
  */
 public class ShareOne {
 
-    public synchronized void Number(int i) {
-        System.out.println(i + "" + (i + 1));
-        i +=2;
+    public synchronized Integer Number(int i) {
+        System.out.print(i + "" + (i + 1));
+        i += 1;
         notifyAll();
         try {
-            if (i > 5) wait();
+            this.wait();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        return i;
     }
 
-    public synchronized void Letter(char c) {
-        System.out.print(c + "");
+    public synchronized char Letter(char c) {
+        System.out.println(c + "");
         notifyAll();
-        if (c > 'G') {
-            try {
-                wait();
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        try {
+             this.wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        return c;
     }
 }

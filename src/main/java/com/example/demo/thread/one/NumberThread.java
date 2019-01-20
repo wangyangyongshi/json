@@ -14,7 +14,10 @@ public class NumberThread implements Runnable {
     @Override
     public void run() {
         for (int i = 1; i < 10; i++) {
-            shareOne.Number(i);
+            i = shareOne.Number(i);
+            if (i >= 8) {
+                break;
+            }
         }
     }
 }

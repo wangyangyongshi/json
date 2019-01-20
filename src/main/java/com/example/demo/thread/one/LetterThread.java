@@ -14,7 +14,10 @@ public class LetterThread implements Runnable {
     public void run() {
         char c;
         for (c = 'A'; c <= 'Z'; ++c) {
-            shareOne.Letter(c);
+            c = shareOne.Letter(c);
+            if (c >= 'Z') {
+                break;
+            }
         }
     }
 }
