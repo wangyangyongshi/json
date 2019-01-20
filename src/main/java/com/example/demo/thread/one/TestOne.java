@@ -16,11 +16,11 @@ public class TestOne {
         threadNumber.start();
         threadLetter.start();
 
-        try {
-            Thread.sleep(5);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(5);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }

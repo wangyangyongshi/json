@@ -22,7 +22,7 @@ public class ShareOne {
         System.out.println(c + "");
         notifyAll();
         try {
-             this.wait();
+            this.wait();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
