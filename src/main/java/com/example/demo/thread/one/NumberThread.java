@@ -5,10 +5,19 @@ package com.example.demo.thread.one;
  */
 public class NumberThread implements Runnable {
 
+    private ShareOne shareOne;
+
+    public NumberThread(ShareOne shareOne) {
+        this.shareOne = shareOne;
+    }
+
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
+        for (int i = 1; i < 10; i++) {
+            i = shareOne.Number(i);
+            if (i >= 8) {
+                break;
+            }
         }
     }
 }
