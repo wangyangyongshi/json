@@ -7,11 +7,13 @@ import java.util.Set;
 
 /**
  * Created by wangyang on 2019/1/14.
+ * http://www.importnew.com/7099.html------------>hashmap工作原理
  */
-public class MapController{
+public class MapController {
 
     public static void main(String[] args) {
-        Map<String,Object> map = new HashMap();
+        Map<String, Object> map = new HashMap();
+        map.put(null, null);
         map.put("name", "zhangqiang");
         map.put("age", 22);
         map.remove("name");
