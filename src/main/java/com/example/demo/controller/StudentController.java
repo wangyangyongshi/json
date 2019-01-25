@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.bean.Student;
 
 import java.io.*;
+import java.util.*;
 
 /**
  * Created by wangyang on 2019/1/14.
@@ -11,6 +12,34 @@ public class StudentController {
 
 
     public static void main(String[] args) {
+
+        Student student = new Student(1, "王洋");
+        Student student1 = new Student(1, "王洋");
+        Student student2 = new Student(2, "王洋");
+        Student student3 = new Student(3, "王洋");
+        List studentList = new ArrayList();
+        studentList.add(student);
+        studentList.add(student1);
+        studentList.add(student2);
+        studentList.add(student3);
+
+
+        Set set = new TreeSet(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getAge()-o2.getAge();
+            }
+        });
+
+        set.add(studentList);
+        for(int i = 0;i< studentList.size();i++){
+            System.out.println(studentList.get(i));
+        }
+
+
+
+
+
         //拼接json字符串
 //        Student student = new Student(1, "wangyang");
 //        String s = JSONObject.toJSONString(student);

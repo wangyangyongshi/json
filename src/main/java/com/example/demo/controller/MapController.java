@@ -19,9 +19,7 @@ public class MapController {
         map.remove("name");
         Set set = map.entrySet();
         Set set1 = map.keySet();
-//        for(Map.Entry<String> entry:set){
-//
-//        }
+
         Iterator iterator = set.iterator();
         while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
