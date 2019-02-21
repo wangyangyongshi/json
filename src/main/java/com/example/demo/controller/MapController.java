@@ -15,8 +15,9 @@ public class MapController {
         Map<String, Object> map = new HashMap();
         map.put(null, null);
         map.put("name", "zhangqiang");
+        map.put("name","wangyang");
         map.put("age", 22);
-        map.remove("name");
+//        map.remove("name");
         Set set = map.entrySet();
         Set set1 = map.keySet();
 
