@@ -9,6 +9,19 @@ public class Student implements Cloneable, Serializable {
     private int age;
     private String name;
 
+
+    static{
+        System.out.println("=========父类的静态代码块");
+    }
+
+    {
+        System.out.println("=======父类的非静态代码块");
+    }
+
+    public Student() {
+        System.out.println("======父类的构造方法");
+    }
+
     public Student(int age, String name) {
         this.age = age;
         this.name = name;
